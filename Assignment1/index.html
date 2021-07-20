@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Assignment 1</title>
+
+    <style>
+      table {
+        border: 7px darkgrey;
+        border-style: outset;
+        padding: 5px;
+        background-color: rgba(231, 223, 223, 0.349);
+      }
+      th,
+      td,
+      tr {
+        border: 2.5px darkgrey;
+        border-style: inset;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        border-collapse: separate;
+        background-color: rgba(231, 223, 223, 0.349);
+      }
+      #break {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+      }
+
+      #form-heading {
+        text-decoration: underline;
+        color: red;
+      }
+      fieldset {
+        background-color: cyan;
+        font-weight: bold;
+        width: 60%;
+        color: red;
+      }
+      button {
+        background-color: green;
+        font-weight: bold;
+        border: 2px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is a Timetable</h1>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>Days / Period</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th></th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+
+        <tr>
+          <td>Mon</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Hindi</td>
+          <td rowspan="6" id="break">BREAK</td>
+          <td>Maths</td>
+          <td>Games</td>
+          <td>Moral Science</td>
+        </tr>
+
+        <tr>
+          <td>Tue</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Hindi</td>
+          <td>Maths</td>
+          <td>Games</td>
+          <td>Moral Science</td>
+        </tr>
+
+        <tr>
+          <td>Wed</td>
+          <td>Science</td>
+          <td>English</td>
+          <td rowspan="3">Hindi</td>
+          <td>Maths</td>
+          <td>Games</td>
+          <td>Moral Science</td>
+        </tr>
+
+        <tr>
+          <td>Thu</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Maths</td>
+          <td>Games</td>
+          <td>Moral Science</td>
+        </tr>
+
+        <tr>
+          <td>Fri</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Maths</td>
+          <td>Games</td>
+          <td>Moral Science</td>
+        </tr>
+
+        <tr>
+          <td>Sat</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Hindi</td>
+          <td colspan="3">Maths</td>
+        </tr>
+
+        <tr>
+          <th colspan="8">This is Class VIII</th>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br /><br />
+
+    <h1 id="form-heading">My Bio Data</h1>
+
+    <form action="#" method="POST">
+      <fieldset class="a">
+        <legend>Personal Information</legend>
+
+        <label for="fname">FirstName:</label>
+        <input type="text" name="fname" id="fname" placeholder="First Name" />
+        <br />
+        <br />
+
+        <label for="Lname">LastName:</label>
+        <input type="text" name="Lname" id="Lname" placeholder="Last Name" />
+        <br />
+        <br />
+
+        <label>Gender: </label><br />
+        <input type="radio" name="Gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" name="Gender" id="Female" value="Female" />
+        <label for="Female">Female</label>
+        <br />
+        <input type="radio" name="Gender" id="others" value="others" />
+        <label for="others">Others</label>
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" />
+        <br /><br />
+
+        <label for="mail">Email:</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Enter Your email"
+        />
+        <br /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="text" maxlength="10" placeholder="+91" />
+        <br /><br />
+
+        <label for="height">Height:</label>
+        <input type="text" placeholder="Height in Feet" />
+        <br />
+      </fieldset>
+      <br />
+
+      <fieldset class="b">
+        <legend>Education</legend>
+
+        <label for="schlname">School Name:</label>
+        <input
+          type="text"
+          name="schlname"
+          id="schlname"
+          placeholder="School Name"
+        />
+        <br /><br />
+
+        <label for="cls">Class:</label>
+        <input type="text" name="cls" id="cls" placeholder="Enter Class" />
+        <br /><br />
+
+        <label for="stream">Stream :</label>
+        <select name="stream" id="stream">
+          <option value="">Stream</option>
+          <option value="medical">Medical</option>
+          <option value="Non-medical">Non-medical</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Humanities">Humanities</option>
+        </select>
+        <br /><br />
+
+        <label for="marksheet">Marksheet :</label>
+        <input type="file" name="marksheet" id="marksheet" />
+      </fieldset>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
