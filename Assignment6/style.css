@@ -1,0 +1,102 @@
+body {
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  background-image: linear-gradient(
+    120deg,
+    #ff0a54 5%,
+    #ff477e 25%,
+    #ff7096 40%,
+    #f9bec7 75%,
+    #fff0f3 85%
+  );
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#container {
+  font-family: "Pacifico", cursive;
+  width: 80%;
+  margin: auto;
+  border: 1px solid grey;
+
+  border-radius: 8px;
+  padding: 10px;
+
+  background-image: linear-gradient(
+    102.7deg,
+    #fddaff 8.2%,
+    #dfadfc 19.6%,
+    #adcdfc 36.8%,
+    #adfcf4 73.2%,
+    #caf8d0 90.9%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#inputDiv {
+  justify-content: center;
+  margin: 2px 25px 25px 40px;
+}
+
+#addTask {
+  font-size: 30px;
+  height: 40px;
+  background-color: #001d3d;
+  color: beige;
+}
+
+#inputTask {
+  width: 70%;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+  height: 40px;
+  margin-left: 30px;
+  /* margin: px; */
+}
+ul {
+  margin: 0px auto;
+  width: 80%;
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  height: auto;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px 5px;
+  width: 100%;
+  box-shadow: 1px 1px 1px hsl(210, 11%, 15%);
+}
+
+li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+li textarea {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  width: 70%;
+  font-size: 15px;
+  min-height: 20px;
+  color: #ec0868;
+}
+li button:first-of-type {
+  margin-left: 40px;
+}
